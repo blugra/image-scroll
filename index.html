@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Continuous Image Scroll</title>
+<style>
+body {
+  margin: 50;
+  padding: 20;
+  overflow: hidden;
+  background-color: #006EA4;
+}
+
+.image-container {
+  white-space: nowrap;
+  position: absolute;
+  animation: scrollImages 400s linear infinite;
+}
+
+.image-container img {
+  display: inline-block;
+  max-height: 100%;
+  padding: 0 10px;
+}
+
+@keyframes scrollImages {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+</style>
+</head>
+<body>
+<div class="image-container">
+  <img src="https://wearebluegrass.com/wp-content/uploads/2022/06/1-Lexmark_white.png" alt="Lexmark">
+  <img src="https://wearebluegrass.com/wp-content/uploads/2022/06/2-GE_white.png" alt="GE">
+  <img src="https://wearebluegrass.com/wp-content/uploads/2022/06/3-CHI_health_white.png" alt="CHI Health">
+  <img src="https://wearebluegrass.com/wp-content/uploads/2022/06/4-UK_white.png" alt="UK">
+  <img src="https://wearebluegrass.com/wp-content/uploads/2022/06/5-UK_healthcare_white.png" alt="UK Healthcare">
+  <img src="https://wearebluegrass.com/wp-content/uploads/2022/06/6-Toyota_white.png" alt="Toyota">
+  <img src="https://wearebluegrass.com/wp-content/uploads/2022/06/7-KCTCS_white.png" alt="KCTCS">
+  <img src="https://wearebluegrass.com/wp-content/uploads/2022/06/10_Keeneland_white.png" alt="Keeneland">
+  <img src="https://wearebluegrass.com/wp-content/uploads/2022/06/8-Conduent_white.png" alt="Conduent">
+  <img src="https://wearebluegrass.com/wp-content/uploads/2022/06/9_TempurPedic_white.png" alt="TempurPedic">
+</div>
+</body>
+</html>
